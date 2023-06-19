@@ -6,17 +6,19 @@ pipeline {
          steps {
            echo "stage1:build"
 }
+}
        stage ('Test') { 
         agent {label 'S1'}
          steps {
            echo "stage2:test"
-} 
+}
+}
 stage ('Test') { 
         agent {label 'master'}
          steps {
            echo "stage3:Deploy"
 } 
-
+}
 }
 }
 }
