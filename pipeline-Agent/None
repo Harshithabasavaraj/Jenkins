@@ -13,7 +13,7 @@ pipeline {
            echo "stage2:test"
 }
 }
-stage ('Test') { 
+stage ('Deploy') { 
         agent {label 'master'}
          steps {
            echo "stage3:Deploy"
